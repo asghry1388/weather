@@ -1,0 +1,66 @@
+:root { --card-bg:#ffffff; --text:#222; --muted:#666; }
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto; background:#f2f5f9; min-height:100vh; display:grid; place-items:center; transition:background 0.6s ease}
+
+.bg-sunny {
+    background:linear-gradient(135deg,#ffb347,#ffcc33)
+}
+.bg-rainy {
+    background:linear-gradient(135deg,#7f8fa6,#3b5998)
+}
+.bg-cloudy {
+    background:linear-gradient(135deg,#b8c6db,#f5f7fa)
+}
+.bg-partly {
+    background:linear-gradient(135deg,#c9e6ff,#e6f3ff)
+}
+.bg-dust {
+    background:linear-gradient(135deg,#a97a50,#d2b48c)
+}
+.bg-humid {
+    background:linear-gradient(135deg,#0c2a5e,#1e3a8a)
+}
+
+.app {
+    width:min(680px,92vw);
+}
+.card {
+    background:var(--card-bg); border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,.08); padding:20px
+}
+.stack {
+    display:flex; gap:10px
+}
+.stack-col {
+    display:flex; flex-direction:column; gap:12px
+}
+.input {
+    flex:1; padding:12px 14px; border-radius:12px; border:1px solid #e5e7eb; font-size:16px
+}
+.btn {
+    padding:12px 18px; border-radius:12px; border:0; background:#111827; color:#fff; cursor:pointer; font-size:15px
+}
+.btn:active {
+    transform:translateY(1px)
+}
+
+.result {
+    margin-top:16px; padding:16px; border:1px dashed #e5e7eb; border-radius:12px
+}
+.city {
+    font-weight:800; font-size:28px; line-height:1.2; text-transform:uppercase
+}
+.row {
+    display:flex; gap:16px; flex-wrap:wrap; margin-top:8px
+}
+.pill {
+    background:#f3f4f6; padding:8px 12px; border-radius:999px; font-weight:600
+}
+.muted {
+    color:var(--muted)
+}
+.error {
+    background:#fff5f5; border:1px solid #fecaca; color:#b91c1c; padding:12px; border-radius:12px
+}
+footer {
+    margin-top:12px; color:#6b7280; font-size:12px; text-align:center
+}
